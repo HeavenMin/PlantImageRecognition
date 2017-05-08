@@ -1,0 +1,674 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>BPG Online - Category Plants</title>
+		<!-- SEO relevant meta data to describe content of page -->
+		<meta name="DC.Title" content="">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="DC.Description" content="">
+		<!-- End SEO relevant meta data -->
+		<!-- Authoriser and maintainer related meta data - developers, don't forget humans.txt  -->
+		<meta name="DC.Creator" content="The University of Melbourne">
+		<meta name="DC.Contributor" content="">
+		<meta name="author" content="">
+		<meta name="UM.Authoriser.Name" content="">
+		<meta name="UM.Authoriser.Title" content="">
+		<meta name="UM.Maintainer.Name" content="">
+		<meta name="UM.Maintainer.Department" content="">
+		<meta name="UM.Maintainer.Email" content="">
+		<!-- End authoriser and maintainer meta data -->
+		<!-- Static meta data  -->
+		<meta name="DC.Rights" content="http://www.unimelb.edu.au/disclaimer">
+		<meta name="DC.Publisher" content="The University of Melbourne">
+		<meta name="DC.Format" content="text/html">
+		<meta name="DC.Language" content="en">
+		<meta name="DC.Identifier" content="http://www.unimelb.edu.au/">
+		<!-- End static meta data -->
+		<!-- Meta data to be autofilled -->
+		<meta name="DC.Date" content="">
+		<meta name="DC.Date.Modified" content="1970-01-01">
+		<!-- End meta data to be autofilled -->
+		<meta content="width=device-width; initial-scale=0.8;" name="viewport">
+
+		<meta http-equiv="x-dns-prefetch-control" content="off">
+		<!-- GLOBAL RESOURCES -->
+		<!-- DO NOT CHANGE -->
+		<link rel="stylesheet" href="https://brand.unimelb.edu.au/web-templates/1-0-0/css/complete.css">
+		<script src="https://brand.unimelb.edu.au/web-templates/1-0-0/js/complete.js"></script>
+
+		<link rel="stylesheet" href="https://brand.unimelb.edu.au/global-header/css/style.css">
+		<script src="https://brand.unimelb.edu.au/global-header/js/injection.js"></script>
+		<!-- /GLOBAL RESOURCES -->
+		<!-- jquery css/core/ui -->
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link type="text/css" href="_js/jquery/css/bpg/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="css/custom.css?ts=1491274078859" media="screen">
+
+		<script type="text/javascript">
+			var maxPage = 2;
+			var currentPage = 2;
+			var baseUrl = 'https://bpg.unimelb.edu.au/';
+			var whoAmI = 'Min Gao';
+			var whenIExpire = 'Standard';
+		</script>
+		<script type="text/javascript" src="_header.js"></script>
+		<script type="text/javascript" src="_general.js"></script>
+		<script type="text/javascript" src="_lists_dialog.js"></script>
+		<script type="text/javascript" src="_results.js"></script>
+		<script type="text/javascript" src="_google-analytics.js"></script>
+	</head>
+	<body class="headingblock no-logo green">
+		<div class="wrapper">
+
+			<!-- header -->
+
+
+<div class="header">
+	<div class="hgroup">
+
+		<div class="sign-in-out" style="display: none;"><a id="sign-out" href="#" style="">Logout</a><a id="sign-in" href="#" style="display: none;">Login</a></div>
+
+		<h1>Burnley Plant Guide Online</h1>
+	</div>
+	<div id="logout-dialog" title="BPG Logout..." class="dialog" style="display:none;">
+		<form>
+			<fieldset style="background-color: white !important; border-width: 0px !Important; padding: 0px !Important; margin: 0px!important;">
+				You are about to be logged out. Are you sure?
+			</fieldset>
+		</form><hr>
+	</div>
+	<div id="bpg_links" role="navigation" style="padding-left: 345px !important;">
+		<ul id="menu">
+			<li class="logged-in-only"><a href="index.jsp"><i class="fa fa-home fa-3x bpg-links-icon"></i><br>Home</a></li>
+			<li class="logged-in-only"><a href="search.jsp"><i class="fa fa-search fa-3x bpg-links-icon"></i><br>Search</a></li>
+			<li class="logged-in-only"><a id="BPG-browse" href="#"><i class="fa fa-sort-alpha-asc fa-3x bpg-links-icon"></i><br>Browse</a></li>
+			<li class="logged-in-only"><a href="myplants.jsp"><i class="fa fa-tags fa-3x bpg-links-icon"></i><br>My Plants</a></li>
+			<li class="logged-in-only"><a href="links.jsp"><i class="fa fa-link fa-3x bpg-links-icon"></i><br>Links</a></li>
+			<li class="logged-in-only"><a href="glossary.jsp"><i class="fa fa-book fa-3x bpg-links-icon"></i><br>Glossary</a></li>
+			<li><a href="about.jsp"><i class="fa fa-info-circle fa-3x bpg-links-icon"></i><br>About</a></li>
+			<li class="logged-in-only"><a href="help.jsp"><i class="fa fa-question-circle fa-3x bpg-links-icon"></i><br>Help</a></li>
+
+			<li class="logged-in-only"><a id="menu-sign-out" href="#"><i class="fa fa-sign-out fa-3x bpg-links-icon"></i><br>Logout</a></li>
+
+			<!-- li><i class="fa fa-search fa-4x"></i> fa-camera-retro</li>
+			<li><i class="fa fa-eye fa-4x"></i> fa-camera-retro</li>
+			<li><i class="fa fa-tags fa-4x"></i> fa-camera-retro</li>
+			<li><i class="fa fa-external-link-square fa-4x"></i> fa-camera-retro</li>
+			<li><i class="fa fa-list-alt fa-4x"></i> fa-camera-retro</li>
+			<li><i class="fa fa-info-circle fa-4x"></i> fa-camera-retro</li>
+			<li><i class="fa fa-sign-out fa-4x"></i> fa-camera-retro</li>
+			<li><a id="BPG-home" href="index.jsp" class="zcurrent_bpg_link">Home</a></li>
+			<li><a id="BPG-search" href="search.jsp">Search</a></li>
+			<li><a id="BPG-browse" href="#">Browse</a></li>
+			<li><a id="BPG-lightbox" href="myplants.jsp">My Plants</a></li>
+			<li><a id="BPG-links" href="links.jsp">Links</a></li>
+			<li><a id="BPG-glossary" target="glossary" href="glossary.jsp">Glossary</a></li>
+			<li><a id="BPG-about" href="about.jsp">About</a></li>
+			<li><a id="BPG-help" href="help.jsp">Help</a></li -->
+		</ul>
+	</div>
+	<div id="BPG-browse-options">
+		<div id="BPG-browse-options-links">
+			<ul><li><a href="browse.jsp"><i class="fa fa-list-ul"></i> Show All Plants</a></li>
+				<li><a href="qs.jsp"><i class="fa fa-leaf"></i> View Categories</a></li></div>
+	</div>
+</div>
+<div id="login-pane">
+	<form id="loginForm" name="loginForm" method="post" action="#">
+		<input type="hidden" name="system" value="base" />
+		<input type="hidden" name="redir" value="localhome" />
+		<input type="hidden" name="login-auth" value="true" id="login-auth" />
+		<div id="login-fields">
+			<div id="sign-in-alert" class="ui-widget" style="display: none">
+				<div> <!-- class="ui-state-error ui-corner-all" style="padding: 0 .7em; border: 0px;" -->
+					<p><!-- span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span-->
+						<strong>Login unsuccessful.</strong> Please try again.</p>
+				</div>
+			</div>
+			<p style="text-align: left;">Please enter your unimelb credentials</p>
+			<div id="username-form-field" class="login-pane-line">
+				<div><div class="form-item"><label for="userName" accesskey="U">Username</label>:</div><input id="userName" type="text" name="userName" size="20" maxlength="64" tabindex="1" class="form-field login-text-field" value="" placeholder="unimelb email username" /></div>
+			</div>
+			<div id="password-form-field" class="login-pane-line">
+				<div><div class="form-item"><label for="pw" accesskey="P">Password</label>:</div><input id="pw" type="password" name="pw" size="64" maxlength="25" tabindex="2" class="form-field login-text-field" placeholder="unimelb email password" value="" /></div>
+			</div>
+			<div id="sign-in-button-form-field" class="login-pane-line">
+				<div><div class="form-item">&nbsp;</div><label for="sign-in-button" accesskey="L"><button type="button" title="Login" value="Login" id="sign-in-button" name="sign-in" tabindex="3" class="button">Login</button></label></div>
+				<div style="display: none;" class="login-spinner"><img src="images/spinner.gif"></div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<div id="decMaintenance" style="display: none; border: double #ff0000; text-align:center; padding:10px;">
+<h3 style="color: red;">Announcement</h3>
+<p>Due to server maintenance and migration, this website will be unavailable on Sunday 4th December between 12:00PM – 1:30PM and 3:30PM – 5:00PM AEDST</p>
+<p>We apologise for any inconvenience caused.</p>
+</div>
+
+<noscript>
+	<div style="border: 2px solid red; padding-left: 5px">
+		<h3 style="color: red">JavaScript disabled</h3>
+		<p>To use BPG <strong>JavaScript</strong> must be enabled in your browser. <a href="http://www.lms.unimelb.edu.au/support/browser/javascript.html">How to enable JavaScript</a></p>
+	</div>
+</noscript>
+
+
+			<div class="main col-8" id="main-content" role="main">
+				<h2>Bulbs, Corms, Rhizomes</h2>
+				<p style="display: none;">[Advanced Search] Results: 125 [Type: 0] [25 - 100 - 199 [100]] [</p>
+				<div>
+					<a style="font-weight: bold;" href="?listing-type=0&amp;p=2&amp;bpg-botanical-name=&amp;bpg-common-name=&amp;submit=Find+Plants&amp;advanced=true&amp;bpg-search=&amp;bpg-description=&amp;id=4&amp;type=bulb,+corm+or+rhizome&amp;m=100&amp;bpg-family=&amp;group=garden+and+landscape&amp;group=wild">List View</a> | <a style="" href="?listing-type=1&amp;p=2&amp;bpg-botanical-name=&amp;bpg-common-name=&amp;submit=Find+Plants&amp;advanced=true&amp;bpg-search=&amp;bpg-description=&amp;id=4&amp;type=bulb,+corm+or+rhizome&amp;m=100&amp;bpg-family=&amp;group=garden+and+landscape&amp;group=wild">Icon View</a> | <a style="" href="?listing-type=2&amp;p=2&amp;bpg-botanical-name=&amp;bpg-common-name=&amp;submit=Find+Plants&amp;advanced=true&amp;bpg-search=&amp;bpg-description=&amp;id=4&amp;type=bulb,+corm+or+rhizome&amp;m=100&amp;bpg-family=&amp;group=garden+and+landscape&amp;group=wild">Table View</a> <!-- | Datasheet View -->
+				</div>
+				<div id="how-do-i-info" class="ui-state-highlight ui-corner-all" style="display: none; border: 1px solid #CCC; background-color: #FFF; margin: 10px 0px; padding: 10px 2px 0px 2px; width: 900px">
+					<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+						<span id="help-info-desc" class="dmsblue" style="font-size: 0.9em">Click on the botanical name or image to find out more about the plant. Add the plant to your lists so you can review it later and add notes.</span></p>
+				</div>
+				<div id="nothing-found-info" class="ui-state-highlight ui-corner-all" style="display: none;border: 1px solid #CCC; background-color: #FFF; margin: 10px 0px; padding: 10px 2px 0px 2px; width: 900px">
+					<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+						<span class="dmsblue">No results found for your search query. Return to the <a id="backUrl" href="search.jsp?p=2&amp;bpg-botanical-name=&amp;bpg-common-name=&amp;submit=Find+Plants&amp;advanced=true&amp;bpg-search=&amp;bpg-description=&amp;id=4&amp;type=bulb,+corm+or+rhizome&amp;m=100&amp;bpg-family=&amp;group=garden+and+landscape&amp;group=wild">search page</a> and refine your search.</span></p>
+				</div>
+
+					<div id="dialog" class="dialog">
+						<form><input type="hidden" name="plantId" value="" id="plantId">
+						<fieldset style="background-color: white !important; border-width: 0px !Important; padding: 0px !Important; margin: 0px!important;">
+							<h4>Lists</h4>
+							<div id="format"></div>
+							<hr class="list-handler">
+							<label class="col-1" accesskey="U" for="new-list" style="text-align: left;">New list</label>
+							<input class="col-3 ui-widget-content" type="text" name="new-list" value="" id="new-list" maxlength="64" placeholder="New list name">
+						</fieldset>
+						</form>
+					</div>
+
+				<div style="display: none;margin-top: 7px; margin-bottom: 7px; padding: 0px"><!-- Search results for:  -->125 results found (showing: 101 to 125)<br>Click on the botanical name or image for further information. You can return to the <a id="backUrl" href="search.jsp?p=2&amp;bpg-botanical-name=&amp;bpg-common-name=&amp;submit=Find+Plants&amp;advanced=true&amp;bpg-search=&amp;bpg-description=&amp;id=4&amp;type=bulb,+corm+or+rhizome&amp;m=100&amp;bpg-family=&amp;group=garden+and+landscape&amp;group=wild">previous page</a>.</div>
+				<div style="display: block;margin-top: 7px; margin-bottom: 7px; padding: 0px"><!-- Search results for: ((<span class="advanced-find-col">group</span> is garden and landscape <span class="advanced-find-op">OR</span> wild)) <span class="advanced-find-operator">AND</span> (<span class="advanced-find-col">type</span> is bulb, corm or rhizome)<br -->125 results found - showing: 101 to 125. Click on the botanical name or image for further information. You can return to the <a id="backUrl" href="search.jsp?p=2&amp;bpg-botanical-name=&amp;bpg-common-name=&amp;submit=Find+Plants&amp;advanced=true&amp;bpg-search=&amp;bpg-description=&amp;id=4&amp;type=bulb,+corm+or+rhizome&amp;m=100&amp;bpg-family=&amp;group=garden+and+landscape&amp;group=wild">previous page</a>.</div>
+				<!-- 100 199 2 100 2 -->
+
+
+				<table id="listing" summary="Search Results">
+					<thead>
+						<tr>
+							<th scope="col">Image</th>
+							<th scope="col" style="width: 110px">Botanical Name</th>
+							<th scope="col">Family</th>
+							<th scope="col">Cultivars</th>
+							<th scope="col">Other Botanical Name/s</th>
+							<th scope="col">Common Name/s</th>
+							<th scope="col" style="width: 110px">&nbsp;</th>
+						</tr>
+					</thead>
+					<tbody id="plant-listing">
+
+						<tr id="r2079">
+							<th scope="row" class="specnum-image" id="thumb-2079"><a class="botanical-name" href="plant.jsp?id=2079"><img width="160" height="120" style="" alt="Rhodohypoxis baurii image" src="LITPICS/02507.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2079">Rhodohypoxis baurii</a>
+							</td>
+							<td>Hypoxidaceae</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2079" style="">Add/Remove...</a></div>
+									<div id="rpi2079" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2208">
+							<th scope="row" class="specnum-image" id="thumb-2208"><a class="botanical-name" href="plant.jsp?id=2208"><img width="160" height="120" style="" alt="Scadoxus multiflorus subsp. multiflorus image" src="LITPICS/02417.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2208">Scadoxus multiflorus subsp. multiflorus</a>
+							</td>
+							<td>Amaryllidaceae</td>
+							<td></td>
+							<td>Haemanthus multiflorus</td>
+							<td>Blood Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2208" style="">Add/Remove...</a></div>
+									<div id="rpi2208" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2219">
+							<th scope="row" class="specnum-image" id="thumb-2219"><a class="botanical-name" href="plant.jsp?id=2219"><img width="160" height="120" style="" alt="Scilla peruviana image" src="LITPICS/00916.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2219">Scilla peruviana</a>
+							</td>
+							<td>Asparagaceae</td>
+							<td></td>
+							<td></td>
+							<td>Cuban Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2219" style="">Add/Remove...</a></div>
+									<div id="rpi2219" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2253">
+							<th scope="row" class="specnum-image" id="thumb-2253"><a class="botanical-name" href="plant.jsp?id=2253"><img width="160" height="120" style="" alt="Sisyrinchium 'Devon Skies' image" src="LITPICS/02255.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2253">Sisyrinchium 'Devon Skies'</a>
+							</td>
+							<td>Iridaceae</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2253" style="">Add/Remove...</a></div>
+									<div id="rpi2253" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2254">
+							<th scope="row" class="specnum-image" id="thumb-2254"><a class="botanical-name" href="plant.jsp?id=2254"><img width="160" height="120" style="" alt="Sisyrinchium striatum image" src="LITPICS/00952.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2254">Sisyrinchium striatum</a>
+							</td>
+							<td>Iridaceae</td>
+							<td></td>
+							<td></td>
+							<td>Yellow-eyed Grass</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2254" style="">Add/Remove...</a></div>
+									<div id="rpi2254" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2595">
+							<th scope="row" class="specnum-image" id="thumb-2595"><a class="botanical-name" href="plant.jsp?id=2595"><img width="160" height="120" style="" alt="Sparaxis hybrids image" src="LITPICS/02595.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2595">Sparaxis hybrids</a>
+							</td>
+							<td>Iridaceae</td>
+							<td></td>
+							<td></td>
+							<td>Harlequin Flower</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2595" style="">Add/Remove...</a></div>
+									<div id="rpi2595" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2275">
+							<th scope="row" class="specnum-image" id="thumb-2275"><a class="botanical-name" href="plant.jsp?id=2275"><img width="160" height="120" style="" alt="Sparaxis tricolor image" src="LITPICS/00933.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2275">Sparaxis tricolor</a>
+							</td>
+							<td>Iridaceae</td>
+							<td>'Fire King', 'Gallipoli'</td>
+							<td>Sparaxis pillansii</td>
+							<td>Harlequin Flower</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2275" style="">Add/Remove...</a></div>
+									<div id="rpi2275" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2280">
+							<th scope="row" class="specnum-image" id="thumb-2280"><a class="botanical-name" href="plant.jsp?id=2280"><img width="160" height="120" style="" alt="Spiloxene alba image" src="LITPICS/02372.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2280">Spiloxene alba</a>
+							</td>
+							<td>Hypoxidaceae</td>
+							<td></td>
+							<td>Hypoxis stellata</td>
+							<td></td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2280" style="">Add/Remove...</a></div>
+									<div id="rpi2280" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2299">
+							<th scope="row" class="specnum-image" id="thumb-2299"><a class="botanical-name" href="plant.jsp?id=2299"><img width="160" height="120" style="" alt="Sternbergia lutea image" src="LITPICS/00947.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2299">Sternbergia lutea</a>
+							</td>
+							<td>Amaryllidaceae</td>
+							<td></td>
+							<td></td>
+							<td>Lily of the Field</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2299" style="">Add/Remove...</a></div>
+									<div id="rpi2299" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2387">
+							<th scope="row" class="specnum-image" id="thumb-2387"><a class="botanical-name" href="plant.jsp?id=2387"><img width="160" height="120" style="" alt="Thysanotus multiflorus image" src="LITPICS/02329.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2387">Thysanotus multiflorus</a>
+							</td>
+							<td>Asparagaceae</td>
+							<td></td>
+							<td></td>
+							<td>Multi-flowered Fringe-lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2387" style="">Add/Remove...</a></div>
+									<div id="rpi2387" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2388">
+							<th scope="row" class="specnum-image" id="thumb-2388"><a class="botanical-name" href="plant.jsp?id=2388"><img width="160" height="120" style="" alt="Thysanotus patersonii image" src="LITPICS/00363.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2388">Thysanotus patersonii</a>
+							</td>
+							<td>Asparagaceae</td>
+							<td></td>
+							<td></td>
+							<td>Twining Fringe Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2388" style="">Add/Remove...</a></div>
+									<div id="rpi2388" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2389">
+							<th scope="row" class="specnum-image" id="thumb-2389"><a class="botanical-name" href="plant.jsp?id=2389"><img width="160" height="120" style="" alt="Thysanotus tuberosus image" src="LITPICS/00981.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2389">Thysanotus tuberosus</a>
+							</td>
+							<td>Asparagaceae</td>
+							<td></td>
+							<td></td>
+							<td>Fringe Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2389" style="">Add/Remove...</a></div>
+									<div id="rpi2389" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2392">
+							<th scope="row" class="specnum-image" id="thumb-2392"><a class="botanical-name" href="plant.jsp?id=2392"><img width="160" height="120" style="" alt="Tigridia pavonia image" src="LITPICS/01157.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2392">Tigridia pavonia</a>
+							</td>
+							<td>Iridaceae</td>
+							<td>'Alba', 'Rosea', 'Sunset in Oz'</td>
+							<td>Tigridia conchiflora</td>
+							<td>Jockeys Cap, Tiger Flower</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2392" style="">Add/Remove...</a></div>
+									<div id="rpi2392" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2415">
+							<th scope="row" class="specnum-image" id="thumb-2415"><a class="botanical-name" href="plant.jsp?id=2415"><img width="160" height="120" style="" alt="Tricyrtis formosana  image" src="LITPICS/01870.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2415">Tricyrtis formosana </a>
+							</td>
+							<td>Liliaceae</td>
+							<td>'Samurai'</td>
+							<td></td>
+							<td>Toad Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2415" style="">Add/Remove...</a></div>
+									<div id="rpi2415" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2423">
+							<th scope="row" class="specnum-image" id="thumb-2423"><a class="botanical-name" href="plant.jsp?id=2423"><img width="160" height="120" style="" alt="Triteleia laxa 'Queen Fabiola' image" src="LITPICS/00860.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2423">Triteleia laxa 'Queen Fabiola'</a>
+							</td>
+							<td>Asparagaceae</td>
+							<td></td>
+							<td>Triteleia laxa 'Koningin Fabiola', Brodiaea laxa</td>
+							<td></td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2423" style="">Add/Remove...</a></div>
+									<div id="rpi2423" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2424">
+							<th scope="row" class="specnum-image" id="thumb-2424"><a class="botanical-name" href="plant.jsp?id=2424"><img width="160" height="120" style="" alt="Tritonia gladiolaris image" src="LITPICS/02030.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2424">Tritonia gladiolaris</a>
+							</td>
+							<td>Iridaceae</td>
+							<td>'Chiffon Lace', 'Rosea'</td>
+							<td>Tritonia lineata</td>
+							<td></td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2424" style="">Add/Remove...</a></div>
+									<div id="rpi2424" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2426">
+							<th scope="row" class="specnum-image" id="thumb-2426"><a class="botanical-name" href="plant.jsp?id=2426"><img width="160" height="120" style="" alt="Tulbaghia violacea image" src="LITPICS/00992.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2426">Tulbaghia violacea</a>
+							</td>
+							<td>Amaryllidaceae</td>
+							<td></td>
+							<td></td>
+							<td>Society Garlic</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2426" style="">Add/Remove...</a></div>
+									<div id="rpi2426" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2427">
+							<th scope="row" class="specnum-image" id="thumb-2427"><a class="botanical-name" href="plant.jsp?id=2427"><img width="160" height="120" style="" alt="Tulipa cultivars image" src="LITPICS/01403.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2427">Tulipa cultivars</a>
+							</td>
+							<td>Liliaceae</td>
+							<td></td>
+							<td></td>
+							<td>Tulip</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2427" style="">Add/Remove...</a></div>
+									<div id="rpi2427" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2440">
+							<th scope="row" class="specnum-image" id="thumb-2440"><a class="botanical-name" href="plant.jsp?id=2440"><img width="160" height="120" style="" alt="Veltheimia bracteata image" src="LITPICS/01662.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2440">Veltheimia bracteata</a>
+							</td>
+							<td>Asparagaceae</td>
+							<td></td>
+							<td></td>
+							<td>Forest Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2440" style="">Add/Remove...</a></div>
+									<div id="rpi2440" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2492">
+							<th scope="row" class="specnum-image" id="thumb-2492"><a class="botanical-name" href="plant.jsp?id=2492"><img width="160" height="120" style="" alt="Wachendorfia thyrsiflora image" src="LITPICS/01150.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2492">Wachendorfia thyrsiflora</a>
+							</td>
+							<td>Haemodoraceae</td>
+							<td></td>
+							<td></td>
+							<td>Wachendorfia, Blood Root, Royal Butterfly Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2492" style="">Add/Remove...</a></div>
+									<div id="rpi2492" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2498">
+							<th scope="row" class="specnum-image" id="thumb-2498"><a class="botanical-name" href="plant.jsp?id=2498"><img width="160" height="120" style="" alt="Watsonia borbonica subsp. ardernei image" src="LITPICS/01021.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2498">Watsonia borbonica subsp. ardernei</a>
+							</td>
+							<td>Iridaceae</td>
+							<td>'Arderne's White', 'Fairy White', 'Jessie', 'Lilac Towers', 'Tivoli Pink'</td>
+							<td>Watsonia pyramidata, Watsonia obrienii</td>
+							<td>Watsonia, Bugle Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2498" style="">Add/Remove...</a></div>
+									<div id="rpi2498" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2513">
+							<th scope="row" class="specnum-image" id="thumb-2513"><a class="botanical-name" href="plant.jsp?id=2513"><img width="160" height="120" style="" alt="Wurmbea dioica image" src="LITPICS/01089.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2513">Wurmbea dioica</a>
+							</td>
+							<td>Colchicaceae</td>
+							<td></td>
+							<td>Anguillaria dioica</td>
+							<td>Early Nancy</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2513" style="">Add/Remove...</a></div>
+									<div id="rpi2513" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2529">
+							<th scope="row" class="specnum-image" id="thumb-2529"><a class="botanical-name" href="plant.jsp?id=2529"><img width="160" height="120" style="" alt="Zantedeschia aethiopica image" src="LITPICS/01029.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2529">Zantedeschia aethiopica</a>
+							</td>
+							<td>Araceae</td>
+							<td>'Green Goddess'</td>
+							<td></td>
+							<td>Arum Lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2529" style="">Add/Remove...</a></div>
+									<div id="rpi2529" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2530">
+							<th scope="row" class="specnum-image" id="thumb-2530"><a class="botanical-name" href="plant.jsp?id=2530"><img width="160" height="120" style="" alt="Zantedeschia elliottiana image" src="LITPICS/01104.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2530">Zantedeschia elliottiana</a>
+							</td>
+							<td>Araceae</td>
+							<td></td>
+							<td></td>
+							<td>Golden Arum, Elliot's Arum</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2530" style="">Add/Remove...</a></div>
+									<div id="rpi2530" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr id="r2532">
+							<th scope="row" class="specnum-image" id="thumb-2532"><a class="botanical-name" href="plant.jsp?id=2532"><img width="160" height="120" style="" alt="Zephyranthes candida image" src="LITPICS/01031.jpg"></a></th>
+							<td><a class="botanical-name" href="plant.jsp?id=2532">Zephyranthes candida</a>
+							</td>
+							<td>Amaryllidaceae</td>
+							<td></td>
+							<td>Amaryllis candida, Argyropsis candida</td>
+							<td>Flower of the West Wind, Rain lily</td>
+							<td>
+								<div>
+									<div><a class="button plant-dialog-activator list-view" id="atl2532" style="">Add/Remove...</a></div>
+									<div id="rpi2532" class="plant-dialog-activator-info" style=""></div>
+								</div>
+							</td>
+						</tr>
+
+					</tbody>
+					</table>
+
+
+				<div id="navigation-panel" style="margin-top: 10px; padding-left: 5px; height: 40px; clear: both; text-align: center;">
+
+					<a class="button button-clear-after" href="?m=100&amp;p=1&amp;bpg-botanical-name=&amp;bpg-common-name=&amp;submit=Find+Plants&amp;advanced=true&amp;bpg-search=&amp;bpg-description=&amp;id=4&amp;type=bulb,+corm+or+rhizome&amp;bpg-family=&amp;group=garden+and+landscape&amp;group=wild" id="browse-navigation-panel-prev"><span style="font-family: Arial; font-size: 1.3em">&laquo;</span> Previous</a>
+
+
+					<!-- Next <span class="">&gt;</span> -->
+
+				</div>
+
+				<hr>
+			</div>
+		</div>
+			<!-- footer -->
+
+<hr>
+<div class="footer">
+    <div id="local" class="wrapper">
+
+		<p class="footertitle">Melbourne School of Land and Environment</p>
+		<div id="org-details" class="col-2">
+			<!-- p><strong>The Faculty of School of Land and Environment</strong></p -->
+			<p class="location">Burnley Campus
+				<br>500 Yarra Boulevard
+				<br>Richmond VIC 3121 Australia
+				<br><strong>Phone:</strong> +61 3 9250 6800
+
+			</p>
+		</div>
+
+		<ul class="col-2">
+			<li><strong>Useful links:</strong>
+				<!-- br><a href="#">Contact us</a --></li>
+			<li><a href="about.jsp">About the Burnley Plant Guide</a></li>
+			<li><a href="about.jsp#Copyright">Copyright and public access</a></li>
+			<li><a href="bibliography.jsp">Bibliography</a></li>
+
+			<!--li><strong>Fax:</strong> +61 3 8344 1670</li -->
+			<!-- li><strong>Email:</strong> <a href="#">Make an enquiry</a></li -->
+			<!-- li class="social"><a class="facebook" href="#">Facebook</a> <a class="twitter" href="#">Twitter</a></li -->
+		</ul>
+
+		<ul class="col-2">
+			<li><strong>Authoriser:</strong>
+				<br>School of Ecosystem and Forest Sciences</li>
+			<li><strong>Maintainer:</strong><br>
+				Learning Environments</li>
+		</ul>
+
+		<ul class="col-2">
+			<li><strong>Date created:</strong><br>
+				3 February 2012</li>
+			<li><strong>Last modified:</strong><br>
+				01 January 1970 11:00:0017 February 2016</li>
+		</ul>
+		<hr>
+    </div>
+    <hr>
+</div>
+
+	</body>
+</html>
