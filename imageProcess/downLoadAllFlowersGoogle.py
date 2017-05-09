@@ -1,7 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """
-    Min Gao
-    773090
+ AUTHOR : MIN
+ PURPOSE : practice download flowers form Google
+ VERSION : 0.1
+ DATE : 3.2017
 """
+
+__author__ = 'Min'
+
 import os
 import sys
 from icrawler.builtin import GoogleImageCrawler

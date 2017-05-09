@@ -1,7 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """
-    Min Gao
-    773090
+ AUTHOR : MIN
+ PURPOSE : get flowerName from a html file
+ VERSION : 0.1
+ DATE : 3.2017
 """
+
+__author__ = 'Min'
+
 import os
 
 flowerWebSiteFile1 = "flowerNameSet1.html"
