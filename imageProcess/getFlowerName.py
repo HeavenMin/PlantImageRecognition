@@ -17,9 +17,16 @@ def getFlowerName(htmlFile):
                 flowerNameList.append(flowerName)
     return flowerNameList
 
-flowerList1 = getFlowerName(flowerWebSiteFile1)
-flowerList2 = getFlowerName(flowerWebSiteFile2)
-flowerList = flowerList1 + flowerList2
+def writeAText(flowerNameList):
+    with open('125FlowerNames.txt', 'w') as f:
+        for flowerName in flowerNameList:
+            f.write(flowerName + '\n')
 
-for name in flowerList:
-    os.mkdir(name)
+# for name in flowerList:
+#     os.mkdir(name)
+
+if __name__ == '__main__':
+    flowerList1 = getFlowerName(flowerWebSiteFile1)
+    flowerList2 = getFlowerName(flowerWebSiteFile2)
+    flowerList = flowerList1 + flowerList2
+    writeAText(flowerList)
