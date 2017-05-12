@@ -10,16 +10,19 @@ Dahlia
 Gladioli
 Carnations
 Chrysanthemums
+Apple blossom
 Camellia
 Iris
 Lilac
 Peony
+Sweet pea
 Magnolia
 Lavender
 Ranunculus
 Stock
 Statice
 Proteas
+Queen Anne’s Lace
 Poinsettia
 Snapdragons
 Lisianthus
@@ -29,6 +32,7 @@ Bourvardia
 Daisies
 Hydrangea
 Aster
+Bird Of Paradise
 Heather
 Anthurium
 Anemone
@@ -36,9 +40,11 @@ Crocus
 Amaryllis
 Alstromeria
 Pansy
+Cherry Blossom
 Cypress
 Hibiscus
 Jasmine
+Morning Glory
 Violet
 Gerberas
 Laurel
