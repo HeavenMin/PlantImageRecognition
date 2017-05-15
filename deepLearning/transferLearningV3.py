@@ -58,6 +58,11 @@ FINAL_TENSOR_NAME = 'final_result'
 # bottleneck tensor size 模型瓶颈层的节点个数
 BOTTLENECK_TENSOR_SIZE = 2048
 
+# FLIP_LEFT_RIGHT = True
+# RANDOM_BRIGHTNESS = 0.4
+
+PRINT_MISCLASSIFIED_TEST_IMAGES = True
+
 MODEL_INPUT_WIDTH = 299     # no use if not using distortions
 MODEL_INPUT_HEIGHT = 299    # no use if not using distortions
 MODEL_INPUT_DEPTH = 3       # no use if not using distortions
@@ -429,6 +434,13 @@ def main(_):
         print('Final test accuracy = %.1f%% (N=%d)' % (testAccuracy * 100,
                                                       len(testBottlenecks)))
 
+        if PRINT_MISCLASSIFIED_TEST_IMAGES:
+            print('@@__Misclassified test images__@@')
+            for i, testFileName in enumerate(testFileNames):
+                if predictions[i] != testGroundTruth[i].argmax():
+                    print('%70s  %s' % (testFileName,
+                                        list(imageLists.keys())[predictions[i]]))
+
         outputGraphDef = graph_util.convert_variables_to_constants(sess,
                          graph.as_graph_def(), [FINAL_TENSOR_NAME])
         with gfile.FastGFile(OUTPUT_GRPAH, 'wb') as f:
@@ -437,5 +449,4 @@ def main(_):
             f.write('\n'.join(imageLists.keys()) + '\n')
 
 if __name__ == '__main__':
-
     tf.app.run()
