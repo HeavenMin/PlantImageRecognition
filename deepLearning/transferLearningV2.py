@@ -4,7 +4,7 @@
 """
  AUTHOR : MIN
  PURPOSE : transferLearning
- VERSION : 0.1
+ VERSION : 0.2
  DATE : 4.2017
 """
 
@@ -32,6 +32,7 @@ BOTTLENECK_TENSOR_NAME = 'pool_3/_reshape:0'
 # image input tensor's name
 JPEG_DATA_TENSOR_NAME = 'DecodeJpeg/contents:0'
 
+# modify these information when you use this program
 MODEL_DIR = ''
 MODEL_FILE = ''
 IMAGE_DIR = ''
@@ -42,6 +43,7 @@ SUMMARIES_DIR = ''  # save logs
 
 TRAINING_STEPS = 4000
 LEARNING_RATE = 0.01
+#______________________________________________________________________________
 
 TESTING_PERCENT = 10
 VALIDATION_PERCENT = 10
