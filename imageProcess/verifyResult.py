@@ -12,8 +12,11 @@ __author__ = 'Min'
 
 import tensorflow as tf, sys
 
+# path of the graph model
 graphPath = sys.argv[1]
+# path of the model labels
 labelPath = sys.argv[2]
+# path of the image need to be identified
 imagePath = sys.argv[3]
 
 # read in the image
@@ -31,7 +34,7 @@ with tf.Session() as sess:
     softmaxTensor = sess.graph.get_tensor_by_name('final_result:0')
     predictions = sess.run(softmaxTensor, \
                 {'DecodeJpeg/contents:0': imageData})
-
+    # sort the prediction results
     topK = predictions[0].argsort()[-len(predictions[0]):][::-1]
     for nodeID in topK:
         className = labelLines[nodeID]
