@@ -1,0 +1,50 @@
+carnations
+gladioli
+pansy
+iris
+orchids
+sweet pea
+freesia
+apple blossom
+heather
+cypress
+ranunculus
+stock
+magnolia
+lavender
+anemone
+alstromeria
+daisies
+cherry blossom
+chrysanthemums
+statice
+hibiscus
+laurel
+queen anne s lace
+marigold
+morning glory
+hydrangea
+jasmine
+daffodils
+amaryllis
+aster
+bird of paradise
+lilies
+snapdragons
+gerberas
+delphinium
+tulips
+poinsettia
+rose
+sunflower
+bourvardia
+anthurium
+dahlia
+violet
+lisianthus
+peony
+crocus
+lilac
+camellia
+proteas
+lotus

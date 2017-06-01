@@ -63,9 +63,9 @@ BOTTLENECK_TENSOR_SIZE = 2048
 
 PRINT_MISCLASSIFIED_TEST_IMAGES = True
 
-MODEL_INPUT_WIDTH = 299     # no use if not using distortions
-MODEL_INPUT_HEIGHT = 299    # no use if not using distortions
-MODEL_INPUT_DEPTH = 3       # no use if not using distortions
+MODEL_INPUT_WIDTH = 299     # for using distortions
+MODEL_INPUT_HEIGHT = 299    # for using distortions
+MODEL_INPUT_DEPTH = 3       # for using distortions
 
 RESIZED_INPUT_TENSOR_NAME = 'ResizeBilinear:0'
 MAX_NUM_IMAGES_PER_CLASS = 2 ** 27 - 1
