@@ -3,7 +3,7 @@
 
 """
  AUTHOR : MIN
- PURPOSE : the deep learning model, similar as inception v3
+ PURPOSE : the deep learning CNN model, similar as inception
  VERSION : 0.1
  DATE : 4.2017
 """
@@ -20,13 +20,16 @@ NUM_CLASSES = 50
 
 slim = tf.contrib.slim
 # 产生截断的正太分布
+# produce a truncated normal distriubtion
 trunc_normal = lambda stddev: tf.truncated_normal_initializer(0.0, stddev)
 
 # 生成默认参数
+# Generate default parameters
 def flowerNet_arg_scope(weight_decay = 0.00004, stddev = 0.1,
                             batch_norm_var_collection = 'moving_vars'):
     batch_norm_params = {
         # 参数衰减系数
+        # parameter attenuation coefficient
         'decay': 0.9997,
         'epsilon': 0.001,
         'updates_collections': tf.GraphKeys.UPDATE_OPS,
@@ -38,6 +41,7 @@ def flowerNet_arg_scope(weight_decay = 0.00004, stddev = 0.1,
         }
     }
 
+    # auto assign default values
     with slim.arg_scope([slim.conv2d, slim.fully_connected],
             weights_regularizer = slim.l2_regularizer(weight_decay)):
             with slim.arg_scope([slim.conv2d],
@@ -50,6 +54,7 @@ def flowerNet_arg_scope(weight_decay = 0.00004, stddev = 0.1,
 
 
 # 生成网络的卷积 池化部分
+# generate convolitonal layer and pooling layer in the CNN
 def flowerNet_base(inputs, scope = None):
     end_points = {}
     with tf.variable_scope(scope, 'Inception', [inputs]):
@@ -282,6 +287,7 @@ def flowerNet_base(inputs, scope = None):
 
             return net, end_points
 
+# global avg pool and softmax and logits
 def flowerNet(inputs, numClasses, isTraining = True,
               dropoutKeepProb = 0.8, predictionFN = slim.softmax,
               spatialSqueeze = True, reuse = None, scope = 'flowerNet'):
@@ -352,7 +358,7 @@ def time_test(session, target, info_string):
                       (datetime.now(), info_string, num_batches, mn, sd))
 
 if __name__ == '__main__':
-    batchSize = 32
+    batchSize = 100
     height, weight = 299, 299
     inputs = tf.random_uniform((batchSize, height, weight, 3))
 
